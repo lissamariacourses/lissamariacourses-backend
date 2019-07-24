@@ -7,7 +7,8 @@ function getConnection() {
         host: 'lissamariacourses.cfvpj09lhgo0.us-east-1.rds.amazonaws.com',
         user: 'paulomunoz',
         password: 'nq2cJVQTbz2LGrXm',
-        database: 'lissamariacourses'
+        database: 'lissamariacourses',
+        port: '3306'
     });
 }
 
