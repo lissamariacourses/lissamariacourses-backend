@@ -6,7 +6,7 @@ module.exports = function (app) {
         conn.executeQuery("SELECT * FROM student WHERE id=" + req.params.id + ";").then(response => {
             res.send(response);
         });
-    })
+    });
     
     app.get('/api/student', function (req, res) {
         console.log("GET /api/student");
@@ -15,7 +15,7 @@ module.exports = function (app) {
         conn.executeQuery("SELECT * FROM student;").then(response => {
             res.send(response);
         });
-    })
+    });
 
     app.post('/api/student', function (req, res) {
         console.log("POST /api/student");
@@ -39,7 +39,6 @@ module.exports = function (app) {
             });
         }
     });
-
 
     function generatePassword() {
         let password = "";

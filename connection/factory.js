@@ -16,7 +16,6 @@ function executeQuery(query) {
         getConnection();
 
         connection.connect();
-
         connection.query(query, function (error, results, fields) {
             if (error) throw error;
 
@@ -24,7 +23,6 @@ function executeQuery(query) {
 
             resolve(results);
         });
-
     });
 }
 
