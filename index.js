@@ -10,9 +10,11 @@ app.use(cors("*"))
 require('./webservice/student')(app);
 require('./webservice/course')(app);
 require('./webservice/courseclass')(app);
+require('./webservice/courseclass_student')(app);
+require('./webservice/login')(app);
 
 // let conn = require('./connection/factory');
-// conn.executeQuery("SHOW COLUMNS FROM courseclass;").then(response => {
+// conn.executeQuery("SHOW COLUMNS FROM courseclass_student;").then(response => {
 //     console.log(response);
 // });
 
